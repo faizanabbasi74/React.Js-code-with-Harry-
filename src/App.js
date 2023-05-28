@@ -45,10 +45,10 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
           <Routes>
-            <Route exact path="/about" element={<About />}>
+            <Route exact path="/about" element={<About mode={mode}/>}>
             </Route>
             <Route exact path="/" element={
-              <TextForm showAlert={showAlert} heading='Enter the text to Analyze' mode={mode} />}>
+              <TextForm showAlert={showAlert} heading='TextUtils- Word Counter, Character Counter, Remove Extra Spaces, Convert Cases' mode={mode} />}>
             </Route>
           </Routes>
           {/* <TextForm showAlert={showAlert} heading='Enter the text to Analyze' mode={mode} />
